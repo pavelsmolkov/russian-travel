@@ -23,8 +23,33 @@
        url(../vendor/fonts/Inter-Regular.woff) format("woff");
 }
 
+.header__list {
+  display: inline;
+  list-style-type: none;
+  margin-left: 18px;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.header__list:hover {
+  border-bottom: 1px solid white;
+}
+
+.header__lang-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.header__link:hover {
+  /* opacity: 0.6; */
+}
+
 .lead {
-  width: 984px;
+  /* max-width: 984px; */
+  max-width: 76.875vw;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -35,7 +60,7 @@
 .lead__title {
   margin: 0;
   padding: 0 0 32px 0;
-  width: 720px;
+  max-width: 720px;
   font-family: 'Inter', sans-serif;
   text-align: center;
   font-weight: 900;
@@ -56,7 +81,19 @@
 }
 
 .lead__image {
-  max-width: 984px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .lead {
+    width: 80%;
+  }
+
+
+
+
+
 }
 
 .lead__caption {
@@ -72,14 +109,18 @@
 .intro {
   display: flex;
   flex-direction: column;
-  width: 984px;
+  /* width: 984px; */
+  /* width: 90%; */
+  max-width: 76.875vw;
   color: white;
   margin: auto;
   padding: 92px 0 92px 0;
-
 }
 
 .intro__title {
+  display: block;
+  max-width: 76.875vw;
+
   font-weight: 900;
   font-size: 54px;
   line-height: 58px;
@@ -94,7 +135,7 @@
   padding: 0 0 32px 0;
   font-size: 16px;
   line-height: 26px;
-  width: 690px;
+  max-width: 690px;
 }
 
 .intro__text-items {
@@ -118,13 +159,15 @@
 .photo-grid {
   color: white;
   display: grid;
-  width: 80%;
-  grid-template-columns: repeat(4, 284px);
+  max-width: 92.5vw;
+  grid-template-columns: repeat(auto-fit, 284px);
   grid-template-rows: repeat(3, 213px);
+  grid-auto-rows: 213px;
   gap: 16px;
   justify-content: center;
   align-content: center;
   margin: 0 auto;
+  box-sizing: border-box;
   padding-bottom: 92px;
 }
 
@@ -145,8 +188,7 @@
 
 .place {
   display: grid;
-  grid-template-columns: 460px 484px;
-  grid-template-rows: minmax(76px 152px) 460px;
+  grid-template-columns: 460px minmax(min-content, max-content);
   gap: 48px 40px;
   /* justify-content: center;
   align-content: center; */
@@ -169,8 +211,8 @@
 .place__image {
   max-width: 100%;
   max-height: 100%;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   object-fit: cover;
   grid-area: place__image
 }
@@ -213,7 +255,7 @@
 .cover {
   margin: auto;
   color: white;
-  max-width: 1184px;
+  max-width: 92.5vw;
   height: 740px;
   background: url(../images/cover-trains.jpg);
   width: 100%;
@@ -266,7 +308,8 @@
 
 .footer {
   margin: auto;
-  max-width: 1184px;
+  max-width: 92.5vw;
+  width: 95%;
   padding: 92px 0 24px 0;
   display: flex;
   justify-content: space-between;
