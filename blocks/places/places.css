@@ -1,0 +1,30 @@
+.places {
+  color: white;
+  margin: auto;
+  max-width: 76.875vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .places {
+    color: white;
+    max-width: 90.625vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    color: white;
+    max-width: 93.75vw;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+
+}
+
+@media screen and (max-width: 320px) {
+  .places {
+    color: white;
+    max-width: 100%;
+  }
+}

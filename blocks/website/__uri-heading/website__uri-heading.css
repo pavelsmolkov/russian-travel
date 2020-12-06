@@ -1,0 +1,15 @@
+.website__uri-heading {
+  margin: 0 0 12px 0;
+  color: #AAAAAA;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  font-size: 12px;
+  line-height: 170%;
+}
+
+@media screen and (max-width: 320px) {
+.website__uri-heading {
+  display: none;
+}
+}
