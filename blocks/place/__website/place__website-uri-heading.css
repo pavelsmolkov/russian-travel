@@ -1,4 +1,4 @@
-.website__uri-heading {
+.place__website-uri-heading {
   margin: 0 0 12px 0;
   color: #AAAAAA;
   font-style: normal;
@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 320px) {
-.website__uri-heading {
+.place__website-uri-heading {
   display: none;
 }
 }

@@ -1,4 +1,4 @@
-.website__uri-link {
+.place__website-uri-link {
   margin: 0;
   color: #FFFFFF;
   text-decoration: none;
@@ -9,12 +9,12 @@
   transition: opacity 0.5s ease;
 }
 
-.website__uri-link:hover {
+.place__website-uri-link:hover {
   opacity: 0.8;
 }
 
 @media screen and (max-width: 320px) {
-.website__uri-link {
+.place__website-uri-link {
   display: none;
 }
 }
