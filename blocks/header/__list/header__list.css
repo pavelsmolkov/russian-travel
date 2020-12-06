@@ -7,10 +7,6 @@
     line-height: 28px;
 }
 
-.header__list:hover {
-    border-bottom: 1px solid white;
-}  
-
 @media screen and (max-width: 320px) {
   .header__list {
     margin-left: 18px;

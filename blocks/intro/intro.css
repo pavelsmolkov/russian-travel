@@ -4,7 +4,8 @@
   max-width: 76.875vw;
   color: white;
   margin: auto;
-  padding: 92px 0 92px 0;
+  padding: 92px 0;
+
 }
 
 @media screen and (max-width: 1024px) {
