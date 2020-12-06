@@ -329,7 +329,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-
   .lead {
     max-width: 90.625vw;
   }
@@ -356,6 +355,56 @@
 
   .cover {
     max-width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .lead {
+    max-width: 100%;
+  }
+
+  .lead__caption {
+    padding-left: 24px;
+  }
+
+  .intro {
+    max-width: 93.75vw;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(auto-fit, 352px);
+    gap: 16px;
+    max-width: 93.75vw;
+  }
+
+  .places {
+    color: white;
+    max-width: 93.75vw;
+  }
+  
+  .place {
+    grid-template-columns: 340px minmax(min-content, max-content);
+    gap: 48px 28px;
+  }
+
+  .place__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .cover {
+
+    max-width: 100%;
+    max-height: 480px;
+    background: url(../images/cover-trains.jpg);
+    background-size: cover;
+  }
+
+  .footer {
+    max-width: 93.75vw;
+    padding: 88px 0 24px 0;
   }
 
 }
