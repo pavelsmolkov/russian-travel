@@ -25,9 +25,6 @@
        url(../vendor/fonts/Inter-Regular.woff) format("woff");
 }
 
-
-
-
 .header__list {
   display: inline;
   list-style-type: none;
@@ -412,23 +409,74 @@
     max-width: 93.75vw;
     padding: 88px 0 24px 0;
   }
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  
+  .lead__title {
+    font-size: 40px;
+    line-height: 44px;
+    padding: 0 0 16px 0;
+
+  }
+
+  .lead__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 0 40px 0;
+
+  }
+  
+  .place {
+    grid-template-columns: 320px;
+    gap: 32px;
+    padding-bottom: 64px;
+    grid-template-areas:
+    "place__title"
+    "place__website"
+    "place__image"
+    "place__paragraph"
+  }
+
+
+  .footer {
+    max-width: 90vw;
+    padding: 64px 0 24px 0;
+    flex-direction: column;
+  }
+  
+  .footer__list {
+
+    flex-direction: column;
+
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 32px;
+  }
 
 }
 
-
 @media screen and (max-width: 320px) {
-  .lead {
-    max-width: 100%;
+  .header__list {
+    margin-left: 18px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .lead__title {
-
-    max-width: 720px;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    font-weight: 900;
     font-size: 40px;
     line-height: 44px;
+    padding: 0 0 16px 0;
+
+  }
+
+  .lead__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 0 40px 0;
+
   }
   
   .lead__caption {
@@ -437,6 +485,38 @@
 
   .intro {
     max-width: 90vw;
+    padding: 64px 0 64px 0;
+  }
+  
+  .intro__title {
+    max-width: 90vw;
+    font-size: 32px;
+    line-height: 35px;
+    padding: 0 0 40px 0;
+  
+  }
+  
+  .intro__text {
+    display: block;
+    margin: 0;
+    padding: 0 0 32px 0;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 690px;
+  }
+  
+  .intro__text-items {
+    padding: 0;
+  
+  }
+  .intro__text-item {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
   }
 
   .photo-grid {
@@ -453,6 +533,7 @@
   .place {
     grid-template-columns: 320px;
     gap: 32px;
+    padding-bottom: 64px;
     grid-template-areas:
     "place__title"
     "place__website"
@@ -466,56 +547,62 @@
     padding-left: 16px;
   }
 
-  .cover {
+.place__website {
 
-    max-width: 100%;
-    max-height: 480px;
-    background: url(../images/cover-trains.jpg);
-    background-size: cover;
-  }
+}
+
+.website__uri-heading {
+  display: none;
+}
+
+.website__uri-link {
+  display: none;
+
+}
+
+.place__paragraph {
+  max-width: 90vw;
+  margin: auto;
+  padding-bottom: 24px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+
 
   .cover {
-    max-width: 100%;
     height: 200px;
-    background: url(../images/cover-trains.jpg);
-    /* width: 100%; */
-    /* box-sizing: border-box; */
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    display: flex;
-    /* flex-direction: column;
-    align-items: center;
-    justify-content: center; */
   }
   
   .cover__title {
-    max-width: 320px;
-    margin: 0 0 32px 0;
-    text-align: center;
-    font-style: normal;
+    max-width: 90vw;
+    margin: 0 0 16px 0;
     font-weight: 900;
     font-size: 32px;
     line-height: 35px;
-    position: relative;
   }
+
+  .cover__subtitle {
+    max-width: 90vw;
+    font-size: 14px;
+    line-height: 16px;
+    position: relative;
+  } 
 
   .footer {
     max-width: 90vw;
-    padding: 88px 0 24px 0;
+    padding: 64px 0 24px 0;
     flex-direction: column;
-    justify-content: space-between;
   }
   
   .footer__list {
-    margin: 0;
-    padding: 0;
-    display: flex;
+
     flex-direction: column;
-    list-style-type: none;
-    padding-right: 18px;
-    font-size: 16px;
-    line-height: 18px;
+
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 32px;
   }
   
   .footer__link {
