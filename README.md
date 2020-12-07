@@ -8,6 +8,8 @@
 
 Проект о путешествии по России.
 
+https://pavelsmolkov.github.io/russian-travel/
+
 **Технологии**
 
 Использованы технологии 
