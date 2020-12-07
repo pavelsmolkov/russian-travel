@@ -1,7 +1,7 @@
 .cover {
   margin: auto;
   color: white;
-  max-width: 92.5vw;
+  max-width: 1184px;
   min-height: 740px;
   background: url(../../images/cover-trains.jpg);
   background-size: cover;
@@ -31,12 +31,12 @@
 @media screen and (max-width: 1024px) {
   .cover {
     max-width: 100%;
+    min-height: 640px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .cover {
-    max-width: 100%;
     min-height: 480px;
   }
 }

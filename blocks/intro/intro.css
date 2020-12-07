@@ -1,7 +1,7 @@
 .intro {
   display: flex;
   flex-direction: column;
-  max-width: 76.875vw;
+  max-width: 984px;
   color: white;
   margin: auto;
   padding: 92px 0;
